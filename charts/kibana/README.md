@@ -39,7 +39,7 @@ See [supported configurations][] for more details.
 
 ## Installing
 
-This chart is tested with the latest 7.16.3 version.
+This chart is tested with the latest 8.5.1 version.
 
 ### Install released version using Helm repository
 
@@ -57,8 +57,8 @@ This chart is tested with the latest 7.16.3 version.
 * Checkout the branch : `git checkout 7.16`
 
 * Install it:
-  - with Helm 3: `helm install kibana ./helm-charts/kibana --set imageTag=7.16.3`
-  - with Helm 2 (deprecated): `helm install --name kibana ./helm-charts/kibana --set imageTag=7.16.3`
+  - with Helm 3: `helm install kibana ./helm-charts/kibana --set imageTag=8.5.1`
+  - with Helm 2 (deprecated): `helm install --name kibana ./helm-charts/kibana --set imageTag=8.5.1`
 
 
 ## Upgrading
@@ -95,7 +95,7 @@ as a reference. They are also used in the automated testing of this chart.
 | `httpPort`            | The http port that Kubernetes will use for the healthchecks and the service                                                                                                                    | `5601`                             |
 | `imagePullPolicy`     | The Kubernetes [imagePullPolicy][]value                                                                                                                                                        | `IfNotPresent`                     |
 | `imagePullSecrets`    | Configuration for [imagePullSecrets][] so that you can use a private registry for your image                                                                                                   | `[]`                               |
-| `imageTag`            | The Kibana Docker image tag                                                                                                                                                                    | `7.16.3`                           |
+| `imageTag`            | The Kibana Docker image tag                                                                                                                                                                    | `8.5.1`                           |
 | `image`               | The Kibana Docker image                                                                                                                                                                        | `docker.elastic.co/kibana/kibana`  |
 | `ingress`             | Configurable [ingress][] to expose the Kibana service.                                                                                                                                         | see [values.yaml][]                |
 | `kibanaConfig`        | Allows you to add any config files in `/usr/share/kibana/config/` such as `kibana.yml` See [values.yaml][] for an example of the formatting                                                    | `{}`                               |

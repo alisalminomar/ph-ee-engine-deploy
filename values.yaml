@@ -133,7 +133,7 @@ zeebe-operate-helm:
 
 elasticsearch:
   enabled: true
-  imageTag: 7.16.3
+  imageTag: 8.5.1
   replicas: 1
   protocol: http
   fullnameOverride: "ph-ee-elasticsearch"
@@ -163,7 +163,7 @@ elasticsearch:
 
 kibana:
   enabled: true
-  imageTag: 7.16.3
+  imageTag: 8.5.1
   fullnameOverride: "ph-ee-kibana"
   elasticsearchHosts: "http://ph-ee-elasticsearch:9200/"
   protocol: http

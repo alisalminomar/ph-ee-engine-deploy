@@ -8,8 +8,8 @@ PaymentHub EE Engine
 
 | Repository | Name | Version |
 |------------|------|---------|
-| http://helm.elastic.co | elasticsearch | 7.16.3 |
-| http://helm.elastic.co | kibana | 7.16.3 |
+| http://helm.elastic.co | elasticsearch | 8.5.1 |
+| http://helm.elastic.co | kibana | 8.5.1 |
 | https://charts.bitnami.com/bitnami | operationsmysql(mysql) | 9.4.5 |
 | https://charts.konghq.com | kong | 2.13.1 |
 | https://codecentric.github.io/helm-charts | keycloak | 18.1.1 |
