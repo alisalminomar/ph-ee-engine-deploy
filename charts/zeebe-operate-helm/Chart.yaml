@@ -1,0 +1,7 @@
+apiVersion: v2
+appVersion: 1.2.2
+description: Zeebe Operate Helm Chart for Kubernetes
+icon: https://zeebe.io/img/zeebe-logo.png
+name: zeebe-operate-helm
+type: application
+version: 1.2.0
