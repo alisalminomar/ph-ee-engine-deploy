@@ -16,12 +16,12 @@ spec:
           - path: "{{ .Values.ingress.path }}"
             pathType: Prefix
             backend:
-{{- if .Values.ingress.backend }}
-{{ toYaml .Values.ingress.backend | indent 14 }}
+{{- if $.Values.ingress.backend }}
+{{ toYaml $.Values.ingress.backend | indent 14 }}
 {{- end }} 
 
   tls:
     - hosts:
-      - "{{ .Values.wildcardhostname }}"
-      secretName: "{{ .Values.tls }}"
+      - "{{ $.Values.wildcardhostname }}"
+      secretName: "{{ $.Values.tls }}"
 {{- end }}
